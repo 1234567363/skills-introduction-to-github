@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitácora Digital</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>Bitácora Digital Seguritac S.A de C.V</h1>
+
+    <form id="formulario">
+      <input type="date" id="fecha" required>
+      <input type="text" id="titulo" placeholder="Título de la entrada" required>
+      <textarea id="contenido" placeholder="Escribe tu entrada aquí..." required></textarea>
+      <button type="submit">Guardar entrada</button>
+    </form>
+
+    <div class="acciones">
+      <button id="borrarTodo">Borrar todas las entradas</button>
+      <button id="exportarTXT">Exportar a TXT</button>
+    </div>
+
+    <hr>
+
+    <div id="bitacora"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
